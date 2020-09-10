@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ontopoff/git_WEB.git"
+    "url": "git+https://github.com/ontopoff/conf.git"
   },
   "author": "Lev Tsatsorin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ontopoff/git_WEB/issues"
+    "url": "https://github.com/ontopoff/conf/issues"
   },
-  "homepage": "https://github.com/ontopoff/git_WEB#readme",
+  "homepage": "https://github.com/ontopoff/conf#readme",
   "devDependencies": {
     "lite-server": "^2.5.4"
   },
