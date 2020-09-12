@@ -16,30 +16,31 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41" alt=""></a>
-               <div class="collapse navbar-collapse" id="Navbar">
-                   <ul class="navbar-nav mr-auto">
-                       <li class="nav-item">
-                           <a class="nav-link active" href="#"><span class="fa fa-home fa-lg"></span> Home</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a>
-                       </li>
-                   </ul>
-               </div>
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41" alt=""></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><span class="fa fa-home fa-lg"></span> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>
+                        Contact</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 <header class="jumbotron">
     <div class="container">
         <div class="row row-header">
@@ -50,6 +51,9 @@
             </div>
             <div class="col-12 col-sm align-self-center">
                 <img src="img/logo.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-sm align-self-center">
+                <a href="#reservingAtable" role="button" class="btn btn-sm btn-warning btn-block" value="ReserveTable">Reserve Table</a>
             </div>
         </div>
     </div>
@@ -64,8 +68,10 @@
             <div class="media">
                 <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza">
                 <div class="media-body">
-                    <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                    <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe
+                    <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span
+                            class="badge badge-pill badge-secondary">$4.99</span></h2>
+                    <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza,
+                        topped with Cerignola olives, ripe
                         vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                 </div>
             </div>
@@ -78,10 +84,16 @@
             <h3>This Month's Promotions</h3>
         </div>
         <div class="col col-sm col-md">
-            <h2>Weekend Grand Buffet</h2>
-            <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six
-                main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per
-                person </p>
+            <div class="media">
+                <div class="media-body">
+                <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads,
+                    six enticing appetizers, six
+                    main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per
+                    person </p>
+                </div>
+                <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="">
+            </div>
         </div>
     </div>
 
@@ -95,12 +107,88 @@
                 <div class="media-body">
                     <h2 class="mt-0">Alberto Somayya</h2>
                     <h4>Executive Chef</h4>
-                    <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with
+                    <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International
+                        experience having worked closely with
                         whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion
                         experiences. </p>
                 </div>
             </div>
-           </div>
+        </div>
+    </div>
+
+    <div class="row row-content align-items-center justify-content-center">
+        <div class="col-12 col-sm-8">
+            <div class="card">
+                <h3 class="card-header text-white bg-warning">Reserve a Table</h3>
+                <div class="card-body">
+                    <form action="" id="reservingAtable">
+                        <div class="form-group row">
+                            <label class="col-md-2 col-form-label">Number of Guests</label>
+                            <div class="col-md-10">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="1guest"
+                                           value="1" checked>
+                                    <label class="form-check-label" for="1guest">
+                                        1
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="2guests"
+                                           value="2">
+                                    <label class="form-check-label" for="2guests">
+                                        2
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="3guests"
+                                           value="3">
+                                    <label class="form-check-label" for="3guests">
+                                        3
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="4guests"
+                                           value="4">
+                                    <label class="form-check-label" for="4guests">
+                                        4
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="5guests"
+                                           value="5">
+                                    <label class="form-check-label" for="5guests">
+                                        5
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="6guests"
+                                           value="6">
+                                    <label class="form-check-label" for="6guests">
+                                        6
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-2 col-form-label">Date and Time</label>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" placeholder="Date">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">
+                                    Reserve
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -129,11 +217,16 @@
             </div>
             <div class="col-12 col-sm-4 align-self-center">
                 <div class="text-center">
-                    <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                            class="fa fa-google-plus fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                            class="fa fa-facebook fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                            class="fa fa-linkedin fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube fa-lg"></i></a>
                     <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
                 </div>
             </div>
